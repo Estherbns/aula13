@@ -62,6 +62,6 @@ df.sort_values(["Salario", "Vendas_Mes"])
 
 
 pd.concat([df, df2], axis=1) # comando sem inplace=True não altera o dataframe
-pd.merge([df, df2], on="Vendas_Mes")
+pd.merge(df, df2, on="Vendas_Mes")
 
 print(pd.merge(df, df2, on="Vendas_Mes"))
